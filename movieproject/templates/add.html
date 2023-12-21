@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+{% block body %}
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter movie name"><br>
+<input type="text" name="desc" placeholder="Enter your movie desc"><br>
+<input type="text" name="year" placeholder="Enter year"><br>
+<input type="file" name="img" placeholder="Enter img"><br><br>
+    <button>Submit</button>
+</form>
+{% endblock %}

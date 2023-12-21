@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    text-align:center;}
+    </style>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+   <h2 style="color:blue;"> Are you want to delete this movie?</h2><br>
+    <button>Ok</button>
+</form>
+
+</body>
+</html>
